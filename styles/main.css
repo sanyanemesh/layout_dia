@@ -319,7 +319,7 @@ p {
     height: 300px;
     width: 300px;
     overflow: hidden;
-    border-radius: 100px; }
+    border-radius: 100px 100px 0; }
     .slider__image {
       height: 300px;
       width: 300px; }
