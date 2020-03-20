@@ -412,6 +412,10 @@ p {
     @media screen and (min-width: 1350px) {
       .section__approach {
         padding: 0 calc(50% - 670px) 0; } }
+  .section__testimonials {
+    padding: 100px calc(50% - 570px) 100px; }
+  .section__vpr {
+    background-color: #fff; }
 
 .about {
   display: -webkit-box;
@@ -859,6 +863,45 @@ p {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #c0cdd7; }
+
+.vpr {
+  height: 688px;
+  background: url(../images/Shapes.png) no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 600px) {
+    .vpr {
+      background-position: center; } }
+  .vpr__heading {
+    font-size: 52px;
+    line-height: 150%;
+    text-align: center;
+    color: #253757;
+    margin: 99px auto 24px; }
+  .vpr__text {
+    font-size: 24px;
+    text-align: center;
+    color: #6c788b;
+    margin-bottom: 64px; }
+  .vpr__button {
+    width: 226px;
+    height: 56px;
+    background: #ff9c8e;
+    border-radius: 64px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    margin-left: auto;
+    margin-right: auto; }
+    .vpr__button:hover {
+      opacity: 0.8; }
 
 body {
   background: #e5e5e5; }
