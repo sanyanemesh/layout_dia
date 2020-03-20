@@ -658,6 +658,9 @@ p {
   background: #ff9c8e;
   margin-left: 100px;
   border-radius: 200px 200px 0; }
+  @media screen and (max-width: 675px) {
+    .approach-all {
+      border-radius: 200px 0 0 200px; } }
 
 .approach {
   position: relative;
@@ -675,7 +678,7 @@ p {
   @media screen and (max-width: 400px) {
     .approach {
       margin-left: 0;
-      padding: 104px 20px; } }
+      padding: 124px 20px; } }
   .approach__info {
     color: #fff; }
   .approach__heading {
@@ -730,6 +733,138 @@ p {
     @media screen and (max-width: 600px) {
       .container__text {
         margin: 10px 0; } }
+
+.testimonials__heading {
+  width: 127px;
+  height: 20px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c0cdd7;
+  margin-bottom: 16px; }
+  @media screen and (min-width: 300px) and (max-width: 1124px) {
+    .testimonials__heading {
+      margin: 20px; } }
+
+.testimonials__main {
+  font-size: 32px;
+  color: #253757;
+  margin-bottom: 85px; }
+  @media screen and (min-width: 300px) and (max-width: 1124px) {
+    .testimonials__main {
+      margin: 20px; } }
+
+.testimonials__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (min-width: 300px) and (max-width: 1124px) {
+    .testimonials__container {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.testimonials__block {
+  width: 314px;
+  height: 494px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+          box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  border-radius: 24px; }
+
+.block {
+  position: relative;
+  margin: 0; }
+  @media screen and (min-width: 400px) and (max-width: 1124px) {
+    .block {
+      margin: 20px; } }
+  @media screen and (max-width: 399px) {
+    .block {
+      margin: 20px 0; } }
+  .block__deco {
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    bottom: 310px;
+    width: 139px;
+    height: 56px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 500px;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    z-index: 1; }
+  .block__deco-2 {
+    left: initial;
+    right: 30px;
+    top: 170px;
+    z-index: 1; }
+  .block__deco-11 {
+    background-color: #56ccf2; }
+  .block__deco-21 {
+    background-color: #fcc304; }
+  .block__deco-31 {
+    background-color: #f25656; }
+  .block__photo {
+    position: absolute;
+    top: 87px;
+    left: 87px;
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+    .block__photo:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+  .block__deco-12 {
+    background-color: #56ccf2; }
+  .block__deco-22 {
+    background-color: #fcc304; }
+  .block__deco-32 {
+    background-color: #f25656; }
+  .block__deco-3 {
+    position: absolute;
+    width: 20.58px;
+    height: 18.48px;
+    left: 147px;
+    top: 309px; }
+  .block__info {
+    position: relative;
+    top: 338px; }
+  .block__quote {
+    font-size: 13px;
+    text-align: center;
+    color: #6c788b;
+    margin: 0;
+    margin-bottom: 16px; }
+  .block__name {
+    font-size: 13px;
+    text-align: center;
+    color: #253757;
+    margin-bottom: 4px; }
+  .block__company {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c0cdd7; }
 
 body {
   background: #e5e5e5; }
