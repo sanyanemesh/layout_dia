@@ -664,8 +664,7 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 204px 0 204px 104px;
-  border-radius: 200px 200px 0;
-  background: #ff9c8e; }
+  border-radius: 200px 200px 0; }
   @media screen and (max-width: 1250px) {
     .approach {
       border-radius: 200px; } }
@@ -709,6 +708,9 @@ p {
       .approach__image {
         height: 680px;
         width: 680px; } }
+    @media screen and (min-width: 1600px) {
+      .approach__image {
+        right: -130px; } }
 
 .container {
   margin-bottom: 64px; }
