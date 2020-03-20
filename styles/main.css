@@ -771,7 +771,7 @@ p {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-.testimonials__block {
+.testimonials__blocks {
   width: 314px;
   height: 494px;
   background: #fff;
@@ -781,16 +781,16 @@ p {
           box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
   border-radius: 24px; }
 
-.block {
+.blocks {
   position: relative;
   margin: 0; }
   @media screen and (min-width: 400px) and (max-width: 1124px) {
-    .block {
+    .blocks {
       margin: 20px; } }
   @media screen and (max-width: 399px) {
-    .block {
+    .blocks {
       margin: 20px 0; } }
-  .block__deco {
+  .blocks__deco {
     position: absolute;
     left: 40px;
     top: 80px;
@@ -803,18 +803,18 @@ p {
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg);
     z-index: 1; }
-  .block__deco-2 {
+  .blocks__deco-2 {
     left: initial;
     right: 30px;
     top: 170px;
     z-index: 1; }
-  .block__deco-11 {
+  .blocks__deco-11, .blocks__deco-12 {
     background-color: #56ccf2; }
-  .block__deco-21 {
+  .blocks__deco-21, .blocks__deco-22 {
     background-color: #fcc304; }
-  .block__deco-31 {
+  .blocks__deco-31, .blocks__deco-32 {
     background-color: #f25656; }
-  .block__photo {
+  .blocks__photo {
     position: absolute;
     top: 87px;
     left: 87px;
@@ -826,36 +826,30 @@ p {
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
-    .block__photo:hover {
+    .blocks__photo:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); }
-  .block__deco-12 {
-    background-color: #56ccf2; }
-  .block__deco-22 {
-    background-color: #fcc304; }
-  .block__deco-32 {
-    background-color: #f25656; }
-  .block__deco-3 {
+  .blocks__deco-3 {
     position: absolute;
     width: 20.58px;
     height: 18.48px;
     left: 147px;
     top: 309px; }
-  .block__info {
+  .blocks__info {
     position: relative;
     top: 338px; }
-  .block__quote {
+  .blocks__quote {
     font-size: 13px;
     text-align: center;
     color: #6c788b;
     margin: 0;
     margin-bottom: 16px; }
-  .block__name {
+  .blocks__name {
     font-size: 13px;
     text-align: center;
     color: #253757;
     margin-bottom: 4px; }
-  .block__company {
+  .blocks__company {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
