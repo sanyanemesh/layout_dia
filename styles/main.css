@@ -711,7 +711,7 @@ p {
       .approach__image {
         height: 680px;
         width: 680px; } }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1599px) {
       .approach__image {
         right: -130px; } }
 
