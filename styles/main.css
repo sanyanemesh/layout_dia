@@ -145,6 +145,13 @@ p {
 .info__button {
   width: 226px;
   height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
   background: #ff9c8e;
   border-radius: 64px;
   border: none;
@@ -184,8 +191,8 @@ p {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
     .slider__arrow_left:hover {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5); }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .slider__arrow_right {
     position: absolute;
     left: 88px;
@@ -202,8 +209,8 @@ p {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
     .slider__arrow_right:hover {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5); }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .slider__arrow_img {
     position: absolute;
     top: 50%;
@@ -219,7 +226,7 @@ p {
     position: absolute;
     left: 144px;
     bottom: 96px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 13px;
     line-height: 19px;
     text-align: center;
@@ -305,6 +312,8 @@ p {
     position: absolute;
     top: 520px;
     right: 0; }
+    .slider__image {
+      border-radius: 0 50px; }
   .about {
     margin: 0 20px; }
     .about__heading {
@@ -319,22 +328,13 @@ p {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-@media screen and (min-width: 300px) and (max-width: 875px) {
+@media screen and (min-width: 300px) and (max-width: 680px) {
   .header {
     position: relative;
-    height: 820px;
-    border-radius: 0 0 0 150px; }
+    height: 560px;
+    border-radius: 0 0 0 100px; }
   .slider {
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 100px 100px 0; }
-    .slider__image {
-      height: 300px;
-      width: 300px; }
-    .slider__text {
-      line-height: 90%; } }
+    display: none; } }
 
 .mobile-nav {
   background-color: #008aff;
@@ -448,18 +448,16 @@ p {
   text-align: center; }
 
 .expertise__blocks {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  grid-template-columns: repeat(3, 290px);
-  -webkit-column-gap: 25px;
-     -moz-column-gap: 25px;
-          column-gap: 25px; }
-  @media only screen and (min-width: 300px) and (max-width: 1024px) {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (min-width: 300px) and (max-width: 1124px) {
     .expertise__blocks {
-      display: grid;
-      grid-template-columns: repeat(1, 290px);
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
@@ -467,32 +465,41 @@ p {
 .expertise__block {
   width: 290px;
   height: 350px; }
+  @media only screen and (min-width: 300px) and (max-width: 1024px) {
+    .expertise__block {
+      margin: 0 20px 100px; } }
 
-.block__image {
-  margin: 0 auto 40px;
-  width: 166px;
-  height: 166px; }
-
-.block__img {
-  border-radius: 20px; }
-
-.block__heading {
-  margin: 0 auto 16px;
-  width: 264px;
-  height: 28px;
-  font-size: 20px;
-  line-height: 140%;
-  color: #253757;
-  text-align: center; }
-
-.block__text {
-  margin: 0 auto;
-  width: 264px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  color: #6c788b;
-  text-align: center; }
+.block {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
+  .block:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  .block__image {
+    margin: 0 auto 40px;
+    width: 166px;
+    height: 166px; }
+  .block__img {
+    border-radius: 20px; }
+  .block__heading {
+    margin: 0 auto 16px;
+    width: 264px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 140%;
+    color: #253757;
+    text-align: center; }
+  .block__text {
+    margin: 0 auto;
+    width: 264px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #6c788b;
+    text-align: center; }
 
 .process {
   margin: 0 50px;
@@ -556,7 +563,15 @@ p {
     -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
             box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
     border-radius: 24px;
-    padding: 32px; }
+    padding: 32px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+    .cards__card:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .cards__card-n {
     width: 46px;
     height: 24px;
@@ -599,8 +614,8 @@ p {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s; }
     .cards__button:hover {
-      -webkit-transform: scale(1.3);
-              transform: scale(1.3); }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .cards__more-text {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -659,19 +674,23 @@ p {
     background: #f36363; }
 
 .approach-all {
+  position: relative;
   background: #ff9c8e;
   margin-left: 100px;
   border-radius: 200px 200px 0; }
   @media screen and (max-width: 675px) {
     .approach-all {
-      border-radius: 200px 0 0 200px; } }
+      border-radius: 20px;
+      margin-left: 0; } }
 
 .approach {
-  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 204px 0 204px 104px;
   border-radius: 200px 200px 0; }
+  @media screen and (min-width: 1600px) {
+    .approach {
+      position: relative; } }
   @media screen and (max-width: 1250px) {
     .approach {
       border-radius: 200px; } }
@@ -682,7 +701,7 @@ p {
   @media screen and (max-width: 400px) {
     .approach {
       margin-left: 0;
-      padding: 124px 20px; } }
+      padding: 50px 20px; } }
   .approach__info {
     color: #fff; }
   .approach__heading {
@@ -721,6 +740,11 @@ p {
 
 .container {
   margin-bottom: 64px; }
+  @media screen and (max-width: 420px) {
+    .container {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .container__image {
     width: 64px;
     height: 64px;
@@ -736,7 +760,7 @@ p {
     font-size: 15px; }
     @media screen and (max-width: 600px) {
       .container__text {
-        margin: 10px 0; } }
+        margin: 20px; } }
 
 .testimonials__heading {
   width: 127px;
@@ -787,7 +811,16 @@ p {
 
 .blocks {
   position: relative;
-  margin: 0; }
+  margin: 0;
+  cursor: pointer; }
+  .blocks:hover .blocks__photo {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25); }
+  .blocks:hover .blocks__deco {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+            transform-origin: center; }
   @media screen and (min-width: 400px) and (max-width: 1124px) {
     .blocks {
       margin: 20px; } }
@@ -806,7 +839,9 @@ p {
     border-radius: 500px;
     -webkit-transform: rotate(-60deg);
             transform: rotate(-60deg);
-    z-index: 1; }
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
   .blocks__deco-2 {
     left: initial;
     right: 30px;
@@ -826,13 +861,10 @@ p {
     height: 140px;
     z-index: 2;
     border-radius: 50%;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
-    .blocks__photo:hover {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
   .blocks__deco-3 {
     position: absolute;
     width: 20.58px;
@@ -893,6 +925,13 @@ p {
     width: 226px;
     height: 56px;
     background: #ff9c8e;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
     border-radius: 64px;
     border: none;
     cursor: pointer;
