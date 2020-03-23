@@ -59,7 +59,7 @@ p {
     margin-right: 78.18px;
     width: 44.82px;
     height: 25.63px;
-    background-image: url(../images/Air.png);
+    background-image: url(../images/Air.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
@@ -156,25 +156,36 @@ p {
   border-radius: 64px;
   border: none;
   cursor: pointer;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .info__button:hover {
-    opacity: 0.8; }
+    opacity: 0.9;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .slider {
   position: absolute;
   top: 120px;
   right: 0;
   border-radius: 200px 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 687px;
+  height: 680px; }
   @media screen and (min-width: 1600px) {
     .slider {
       left: calc(50% + 1145px / 2 - 687px + 200px); } }
   .slider__image {
-    width: 687px;
-    height: 680px;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: inherit;
     border-radius: 200px 0 0;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .slider__image:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
   .slider__arrows {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -472,26 +483,38 @@ p {
 
 .expertise__block {
   width: 290px;
-  height: 350px; }
+  height: 400px;
+  padding-top: 50px;
+  border-radius: 24px; }
   @media only screen and (min-width: 300px) and (max-width: 1024px) {
     .expertise__block {
       margin: 0 20px 100px; } }
 
 .block {
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s; }
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden; }
   .block:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .block:hover .block__img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .block__image {
+    position: relative;
     margin: 0 auto 40px;
     width: 166px;
-    height: 166px; }
-  .block__img {
+    height: 166px;
+    overflow: hidden;
     border-radius: 20px; }
+  .block__img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
   .block__heading {
     margin: 0 auto 16px;
     width: 264px;
@@ -573,13 +596,11 @@ p {
     border-radius: 24px;
     padding: 32px;
     cursor: pointer;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
     .cards__card:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .cards__card-n {
     width: 46px;
     height: 24px;
@@ -728,7 +749,19 @@ p {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .approach__image--img {
+    border-radius: 200px 0 0;
+    max-width: 100%;
+    width: 100%;
+    height: inherit;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block; }
+    .approach__image--img:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .approach__image {
+    overflow: hidden;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -820,15 +853,20 @@ p {
 .blocks {
   position: relative;
   margin: 0;
-  cursor: pointer; }
-  .blocks:hover .blocks__photo {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25); }
-  .blocks:hover .blocks__deco {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transform-origin: center;
-            transform-origin: center; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .blocks:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .blocks:hover .blocks__photo {
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25); }
+    .blocks:hover .blocks__deco {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: center;
+              transform-origin: center; }
   @media screen and (min-width: 400px) and (max-width: 1124px) {
     .blocks {
       margin: 20px; } }
@@ -943,12 +981,14 @@ p {
     border-radius: 64px;
     border: none;
     cursor: pointer;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     margin-left: auto;
     margin-right: auto; }
     .vpr__button:hover {
-      opacity: 0.8; }
+      -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      opacity: 0.9; }
 
 .footer {
   margin-top: -200px;
@@ -1017,6 +1057,7 @@ p {
     border: none;
     font-weight: 600;
     font-size: 15px;
+    color: #fff;
     padding-bottom: 12px;
     border-bottom: 1px solid #fff;
     opacity: 0.5;
@@ -1052,10 +1093,12 @@ p {
     background: #ff7e6c;
     border: none;
     border-radius: 64px;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
     .form__button:hover {
-      opacity: 0.8; }
+      opacity: 0.9;
+      -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .contacts {
   color: #fff; }
