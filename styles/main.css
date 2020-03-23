@@ -172,7 +172,9 @@ p {
       left: calc(50% + 1145px / 2 - 687px + 200px); } }
   .slider__image {
     width: 687px;
-    height: 680px; }
+    height: 680px;
+    border-radius: 200px 0 0;
+    overflow: hidden; }
   .slider__arrows {
     display: -webkit-box;
     display: -ms-flexbox;
