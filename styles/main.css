@@ -164,7 +164,9 @@ p {
 .slider {
   position: absolute;
   top: 120px;
-  right: 0; }
+  right: 0;
+  border-radius: 200px 0 0;
+  overflow: hidden; }
   @media screen and (min-width: 1600px) {
     .slider {
       left: calc(50% + 1145px / 2 - 687px + 200px); } }
@@ -239,6 +241,9 @@ p {
     font-size: 14px;
     line-height: 140%;
     font-weight: normal; }
+
+.mySlides {
+  display: none; }
 
 @media screen and (min-width: 1600px) and (max-width: 4000px) {
   .header {
